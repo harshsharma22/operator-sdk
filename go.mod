@@ -52,6 +52,8 @@ require (
 	sigs.k8s.io/yaml v1.1.0
 )
 
+require github.com/emicklei/go-restful v2.9.5+incompatible // indirect
+
 require (
 	cloud.google.com/go v0.49.0 // indirect
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
@@ -89,7 +91,6 @@ require (
 	github.com/docker/go-metrics v0.0.0-20180209012529-399ea8c73916 // indirect
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/docker/spdystream v0.0.0-20160310174837-449fdfce4d96 // indirect
-	github.com/emicklei/go-restful v2.9.5+incompatible // indirect
 	github.com/evanphx/json-patch v4.5.0+incompatible // indirect
 	github.com/exponent-io/jsonpath v0.0.0-20151013193312-d6023ce2651d // indirect
 	github.com/fatih/color v1.7.0 // indirect
@@ -194,5 +195,6 @@ require (
 
 replace (
 	github.com/Azure/go-autorest => github.com/Azure/go-autorest v13.3.2+incompatible // Required by OLM
+	github.com/emicklei/go-restful/v3 => github.com/emicklei/go-restful/v3 v3.8.0 // Fix CVE-2022-1996
 	k8s.io/client-go => k8s.io/client-go v0.17.4 // Required by prometheus-operator
 )
